@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/master.css" type="text/css">
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<title>Contact</title>
+
+</head>
+<body>
+
+<nav>
+	<ul class="topnav" id="myTopnav">
+		<li><a href="index.html#top">HOME</a></li>
+		<li><a href="man.html">MAN</a></li>
+		<li><a href="woman.html">WOMAN</a></li>
+		<li><a href="about.html">ABOUT</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+		<li class="icon">
+			<a href="javascript:void(0);" onclick="myFunction()">MENU</a>
+		</li>
+	</ul>
+</nav>
+<hr>
+
+<article>
+<section>
+<div class="pagebox">
+
+<form method="post" action="http://earthdance.com/cgi-bin/bnbform/bnbform.cgi">
+
+<fieldset>
+<legend>General Information</legend>
+<p>
+<label for="name">Name: </label> <input type="text" name="name" id="name" size="24">
+<br>
+<label for="email">Email: </label> <input type="text" name="email" id="email" size="24">
+<br>
+<label for="phone">Phone: </label> <input type="text" name="phone" id="phone" size="24">
+</p>
+<p>
+<label for="role">You are:</label>
+<select name="role" id="role">
+<option selected="selected">&nbsp;</option>
+<option>Press</option>
+<option>Merchandiser</option>
+<option>Other</option>
+</select>
+</p>
+</fieldset>
+
+<fieldset>
+<legend>Message</legend>
+<p>
+<label for="comments">Please leave your message below.</label>
+<br>
+<textarea name="comments" id="comments" rows="6" cols="50"></textarea>
+</p>
+</fieldset>
+
+<p>
+<input type="submit" value="Submit">
+<!-- For reset and submit buttons, whatever you put in "value" will be the label of the button; if you don't include a value="..." attribute, they will be named "Reset" and "Submit." -->
+</p>
+
+<div>
+<!-- SCRIPT CONFIGURATION SECTION -->
+<input type="hidden" name="data_order" value="name, email, phone, role, comments">
+<input type="hidden" name="submit_to" value="dax.olesa@yahoo.com">
+<input type="hidden" name="form_id" value="My Test Form">
+<input type="hidden" name="ok_url" value="http://webhawks.org/~dm61dageni6933/clothing/thanks.html">
+<!-- END OF SCRIPT CONFIGURATION SECTION -->
+</div>
+
+</form>
+
+</div>
+</section>
+</article>
+
+<footer>
+	<hr>
+	<div>
+		CLOTHING® 2016<br><br>
+		<a href="sitemap.html">SITE MAP</a><br>
+		<a href="http://validator.w3.org/check?uri=referer">VALID HTML 5</a><br>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">VALID CSS</a><br>
+		<a href="http://wave.webaim.org/refer">ACCESSIBILITY</a>
+	</div>
+</footer>
+
+</body>
+</html>
